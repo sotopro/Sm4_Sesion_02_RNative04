@@ -38,7 +38,7 @@ h1 {
 }
 
 .card:hover {
-    animation: bounce 0.5s linear;
+    animation: rotate-card 1.5s linear;
 }
 
 .card-title {
@@ -58,7 +58,7 @@ h1 {
 
 @keyframes bounce {
     20% {
-        transform: translateY(-6px);
+        transform: translatex(-6px);
     }
     40% {
         transform: translateY(0px);
@@ -68,5 +68,17 @@ h1 {
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes rotate-card {
+    0% {
+        transform: perspective(320px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(320px) rotateX(0deg) rotateY(-180deg);
+    }
+    100% {
+        transform: perspective(320px) rotateX(0deg) rotateY(-180deg);
     }
 }
