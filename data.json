@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "Daniel",
+            "username": "sotopro",
+            "image": "https://dummyimage.com/600x400/000/fff"
+        },
+        {
+            "id": "2",
+            "name": "Daniel Soto",
+            "username": "danielsotopachaqtec",
+            "image": "https://dummyimage.com/600x400/000/fff"
+        }
+    ]
+}
