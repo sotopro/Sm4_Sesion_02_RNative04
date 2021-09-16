@@ -16,7 +16,8 @@
 // f();
 
 async function showAvatar() {
-    // read our JSON
+    try {
+        // read our JSON
     let response = await fetch('./data.json');
     let user = await response.json();
     console.log(user)
@@ -36,6 +37,11 @@ async function showAvatar() {
     img.remove();
 
     return githubUser;
+    } catch (e) {
+        console.log(e);
+    } 
 }
 
 showAvatar();
+
+console.log(1)
